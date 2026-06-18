@@ -28,6 +28,7 @@ COMMIT;
 SELECT * FROM Customer;
 SELECT * FROM LOAN;
 
+//Scenario 1
 BEGIN
    FOR rec IN (
       SELECT l.LoanID
@@ -45,6 +46,8 @@ BEGIN
    COMMIT;
 END;
 /
+
+//Scenario 2
 BEGIN
    FOR rec IN (
       SELECT CustomerID
@@ -60,6 +63,8 @@ BEGIN
    COMMIT;
 END;
 /
+
+Scenario 3
 BEGIN
    FOR rec IN (
       SELECT c.Name,
