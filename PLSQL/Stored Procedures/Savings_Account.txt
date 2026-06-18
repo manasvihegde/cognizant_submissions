@@ -10,6 +10,7 @@ INSERT INTO SavingsAccount VALUES (103,'Priya',15000);
 COMMIT;
 SELECT * FROM SAVINGSACCOUNT;
 
+//Scenario 1
 CREATE OR REPLACE PROCEDURE ProcessMonthlyInterest
 IS
 BEGIN
@@ -38,6 +39,7 @@ COMMIT;
 
 SELECT * FROM EMPLOYEE;
 
+//Scenario 2
 CREATE OR REPLACE PROCEDURE UpdateEmployeeBonus(
    p_department IN VARCHAR2,
    p_bonus_percent IN NUMBER
@@ -66,6 +68,7 @@ INSERT INTO Account VALUES (2,'Anita',5000);
 COMMIT;
 SELECT * FROM ACCOUNT;
 
+Scenario 3
 CREATE OR REPLACE PROCEDURE TransferFunds(
    p_from_account IN NUMBER,
    p_to_account IN NUMBER,
