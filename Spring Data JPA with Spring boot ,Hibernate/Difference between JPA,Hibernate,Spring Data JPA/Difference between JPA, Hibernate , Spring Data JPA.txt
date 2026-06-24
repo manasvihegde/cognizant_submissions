@@ -1,0 +1,20 @@
+Difference between JPA, Hibernate and Spring Data JPA
+
+JPA - A set of rules/guidelines (specification) for ORM in Java
+
+Hibernate - A tool that implements those JPA rules
+
+Spring Data JPA  - A helper layer on top of Hibernate to reduce code
+
+Analogy: JPA is like a SYLLABUS, Hibernate is the TEXTBOOK written based on that syllabus, Spring Data JPA is the SUMMARY NOTES that make it easier to study.
+
+Detailed Comparison Table
+Feature				JPA				Hibernate				Spring Data JPA
+Type				Specification			ORM Framework				Abstraction Layer
+Package				jakarta.persistence		org.hibernate				org.springframework.data
+Has implementation?		No				Yes					No (uses Hibernate)
+Manages transactions?		No				Manual					Auto (@Transactional)
+Write SQL?			No				Uses HQL				Uses method names
+Boilerplate code		High				High					Minimal
+Who defines it?			Oracle/Jakarta			Red Hat					Spring/Pivotal
+
